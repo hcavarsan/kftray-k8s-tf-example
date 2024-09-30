@@ -23,8 +23,7 @@ To bootstrap all the k8s cluster stack, just clone this repository and run terra
 ```bash
 git clone https://github.com/hcavarsan/kftray-k8s-tf-example
 cd kftray-k8s-tf-example/terraform
-terraform init
-terraform apply --auto-approve
+make apply
 ```
 
 ### 2. Install Kftray
