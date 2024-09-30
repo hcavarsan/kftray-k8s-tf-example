@@ -46,11 +46,16 @@ Once 'terraform apply' finishes, follow these steps:
 5. Select the right context (e.g., `kftray-cluster`) from the dropdown.
 6. Click **"Import"** to load the port forwarding settings automatically.
 
+
 After importing, you can start port forwarding by toggling the switch next to each service in Kftray or simply click **"Start All"** to forward everything at once.
+
+  <a href="https://github.com/hcavarsan/kftray">
+    <img src="docs/kftray.gif" alt="KFtray Import">
+  </a>
 
 ### 4. Access Your Services
 
-With Kftray handling the port forwarding, you can access your services easily at these URLs:
+With Kftray managing the port forwarding, you can access your services locally at the following URLs:
 
 - **Argo CD:** [http://localhost:16080](http://localhost:16080)
 - **Prometheus:** [http://localhost:19090](http://localhost:19090)
@@ -58,7 +63,7 @@ With Kftray handling the port forwarding, you can access your services easily at
 - **Jaeger:** [http://localhost:15090](http://localhost:15090)
 
 
-## Customizing the cluster and kftray setting
+## Customizing the Kuberentes cluster and KFTray settings
 
 ### Cluster Settings
 
