@@ -16,7 +16,7 @@ Before you begin, make sure you have these installed on your computer:
 - [Terraform (v1.0.0 or later)](https://www.terraform.io/downloads.html)
 - [kubectl](https://kubernetes.io/docs/tasks/tools/)
 - [Helm](https://helm.sh/docs/intro/install/)
-- [Kftray](https://github.com/hcavarsan/kftray) for managing port forwarding automatically
+- [Kftray](https://github.com/hcavarsan/kftray)
 
 ### 1. Terraform
 
