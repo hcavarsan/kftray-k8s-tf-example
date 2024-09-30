@@ -103,9 +103,11 @@ locals {
   services = {
     argocd = {
       kftray = {
-        alias       = "argocd"
-        local_port  = "16080"
-        target_port = "http"
+        server = {
+          alias       = "argocd"
+          local_port  = "16080"
+          target_port = "http"
+        }
       }
     }
   }
