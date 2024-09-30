@@ -8,9 +8,9 @@ This project is different from the needed work of using Ingress, NodePort, or Lo
 
 ## Why?
 
-Locally, Ingress controllers are not needed or the services being exposed with NodePort/LoadBalancer, since it will be an overhead and will make the situation mismanaged. In this set up, what happens is everything remains inside the cluster. That makes the whole environment more secure and simpler to manage.
+Sometimes, Ingress controllers are not needed or the services being exposed with NodePort/LoadBalancer, since it will be an overhead and will make the situation mismanaged. In this set up, what happens is everything remains inside the cluster.That makes the entire environment more secure and simpler. All external traffic goes through kubectl port-forward tunnels on localhost via kftray.
 
-## Getting Started
+## Bootstrapping the stack
 
 Before you begin, make sure you have these installed on your computer:
 
