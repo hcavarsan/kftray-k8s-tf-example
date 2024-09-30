@@ -35,7 +35,7 @@ terraform apply --auto-approve
 
 Access the [Kftray GitHub page](https://github.com/hcavarsan/kftray) and follow the installation instructions.
 
-### 3. Import kubectl port forwards configurations
+### 3. Import kubectl port-forward configurations in kftray
 
 Once 'terraform apply' finishes, follow these steps:
 
