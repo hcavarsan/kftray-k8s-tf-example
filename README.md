@@ -37,9 +37,7 @@ Access the [Kftray GitHub page](https://github.com/hcavarsan/kftray) and follow 
 
 ### 3. Import kubectl port forwards configurations
 
-Kftray scans the services and finds the ports they need to connect. It then sets up the forwarding automatically.
-
-So, once 'terraform apply' finishes, follow these steps:
+Once 'terraform apply' finishes, follow these steps:
 
 1. Open Kftray and click the tray icon to open the main window.
 2. Click the menu icon in the bottom left corner.
