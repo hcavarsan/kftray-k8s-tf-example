@@ -1,10 +1,7 @@
 # Kubernetes Local Cluster with Kind, Terraform and Kftray Annotations
 
 
-
-  <a href="https://github.com/hcavarsan/kftray">
-    <img src="https://i.postimg.cc/28gsCWRV/2024-09-30-18-04-59.gif" alt="KFtray Demo">
-  </a>
+[![KFtray Demo](https://i.postimg.cc/28gsCWRV/2024-09-30-18-04-59.gif)](https://github.com/hcavarsan/kftray)
 
 
 ## Overview
