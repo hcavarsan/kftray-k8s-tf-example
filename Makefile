@@ -18,7 +18,7 @@ apply: init
 .PHONY: destroy
 destroy:
 	@echo "Destroying Terraform-managed infrastructure..."
-	@cd $(TERRAFORM_DIR) && terraform destroy $(AUTO_APPROVE) $(PARALLELISM)
+	@cd $(TERRAFORM_DIR) && terraform destroy $(AUTO_APPROVE)
 
 .PHONY: recreate
 recreate: init destroy apply
