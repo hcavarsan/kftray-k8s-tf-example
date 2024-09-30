@@ -25,8 +25,8 @@ Before you begin, make sure you have these installed on your computer:
 To bootstrap all the k8s cluster stack, just clone this repository and run terrarform:
 
 ```bash
-git clone https://github.com/hcavarsan/kind-kftray-example
-cd kind-kftray-example/terraform
+git clone https://github.com/hcavarsan/kftray-k8s-tf-example
+cd kftray-k8s-tf-example/terraform
 terraform init
 terraform apply --auto-approve
 ```
