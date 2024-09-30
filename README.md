@@ -1,5 +1,12 @@
 # Kubernetes Local Cluster with Kind, Terraform and Kftray Annotations
 
+
+
+  <a href="https://github.com/hcavarsan/kftray">
+    <img src="https://i.postimg.cc/28gsCWRV/2024-09-30-18-04-59.gif" alt="KFtray Demo">
+  </a>
+
+
 ## Overview
 
 This project provides a simple way to build a Kubernetes (k8s) cluster. It automates the bootstrap process for a local k8s cluster and uses [Kind (Kubernetes IN Docker)](https://kind.sigs.k8s.io/), `Terraform`, and Helm to set up `ArgoCD`, `Prometheus`, `Alertmanager`, `Grafana`, and `Jaeger`. Additionally, it automatically configures kubectl port forwarding via [Kftray](https://github.com/hcavarsan/kftray) based on service annotations.
