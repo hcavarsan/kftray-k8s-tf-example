@@ -106,7 +106,6 @@ locals {
         target_port = "http"
       }
     }
-    # Add other services here
   }
 }
 ```
