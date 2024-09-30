@@ -2,13 +2,11 @@
 
 ## Overview
 
-This is the project which I have created as an easy way to get a k8s cluster operated together with the automation part which is the use of [Kind (Kubernetes IN Docker)](https://kind.sigs.k8s.io/) and `Terraform` for the same purpose.
-
-This project is different from the needed work of using Ingress, NodePort, or LoadBalancer to your services and instead it uses [Kftray](https://github.com/hcavarsan/kftray) as a port forward manager and auto-imports ports through the use of the auto-import feature to import the port forwarding by annotations in k8s services.
+This project is an easy way to build a Kubernetes (k8s) cluster. It employs automation by using [Kind (Kubernetes IN Docker)](https://kind.sigs.k8s.io/), `Terraform`, and Helm to set up ArgoCD, Prometheus, Alertmanager, Grafana, and Jaeger. Apart from that, it also sets up kubectl port forwarding via kftray automatically based on services annotations.
 
 ## Why?
 
-Sometimes, Ingress controllers are not needed or the services being exposed with NodePort/LoadBalancer, since it will be an overhead and will make the situation mismanaged. In this set up, what happens is everything remains inside the cluster.That makes the entire environment more secure and simpler. All external traffic goes through kubectl port-forward tunnels on localhost via kftray.
+In some cases, there is no need of Ingress controllers or exposed services with NodePort/LoadBalancer,  What happens in this setup is that everything stays inside the cluster, thus making the environment safer and simpler. All external traffic is tunneled through kubectl port-forward on localhost via kftray.
 
 ## Bootstrapping the stack
 
