@@ -45,8 +45,6 @@ locals {
       chart      = "jaeger"
       version    = var.jaeger_chart_version
 
-      additional_values_file = "${path.module}/values/jaeger-values.yaml"
-
       kftray = {
         alias       = "jaeger"
         local_port  = "15090"
