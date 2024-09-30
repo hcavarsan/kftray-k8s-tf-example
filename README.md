@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is an easy way to build a Kubernetes (k8s) cluster. It employs automation by using [Kind (Kubernetes IN Docker)](https://kind.sigs.k8s.io/), `Terraform`, and Helm to set up `ArgoCD`, `Prometheus`, `Alertmanager`, `Grafana`, and `Jaeger`. Apart from that, it also sets up kubectl port forwarding via [Kftray](https://github.com/hcavarsan/kftray) automatically based on services annotations.
+This project provides a simple way to build a Kubernetes (k8s) cluster. It automates the bootstrap process for a local k8s cluster and uses [Kind (Kubernetes IN Docker)](https://kind.sigs.k8s.io/), `Terraform`, and Helm to set up `ArgoCD`, `Prometheus`, `Alertmanager`, `Grafana`, and `Jaeger`. Additionally, it automatically configures kubectl port forwarding via [Kftray](https://github.com/hcavarsan/kftray) based on service annotations.
 
 ## Why?
 
