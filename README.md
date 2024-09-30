@@ -1,4 +1,4 @@
-# Kubernetes Local Cluster with Kind, Terraform and Kftray Integration
+# Kubernetes Local Cluster with Kind, Terraform and Kftray Annotations
 
 ## Overview
 
