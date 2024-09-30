@@ -14,7 +14,7 @@ Before you begin, make sure you have these installed on your computer:
 
 - [Docker](https://www.docker.com/get-started)
 - [Terraform (v1.9.5)](https://www.terraform.io/downloads.html)
-- [Kftray](https://github.com/hcavarsan/kftray)
+- [Kftray](https://github.com/hcavarsan/kftray) - you can choose beetwen kftray (GUI) or kftui (TUI)
 
 ### 1. Terraform
 
@@ -48,6 +48,20 @@ After importing, you can start port forwarding by toggling the switch next to ea
   <a href="https://github.com/hcavarsan/kftray">
     <img src="docs/kftray.gif" alt="KFtray Import">
   </a>
+
+
+Or, you can do the same in kftui if you prefer a terminal user interface:
+
+1. Export the KUBECONFIG environment variable and start kftui:
+   `KUBECONFIG="~/.kube/kind-config-kftray-cluster" kftui`
+2. Press Tab to access the top menu and select `Auto Import`
+3. Select all configs by pressing Ctrl+A.
+4. Press F to start all port forwards.
+
+  <a href="https://github.com/hcavarsan/kftray">
+    <img src="docs/kftui.gif" alt="KFtray Import">
+  </a>
+
 
 ### 4. Access Your Services
 
