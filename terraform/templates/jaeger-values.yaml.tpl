@@ -1,5 +1,7 @@
-query:
+%{ for name, config in kftray ~}
+${name}:
   service:
     annotations:
       "kftray.app/enabled": "true"
-      "kftray.app/configs": "${kftray_alias}-${kftray_local_port}-${kftray_target_port}"
+      "kftray.app/configs": "${config.alias}-${config.local_port}-${config.target_port}"
+%{ endfor ~}
