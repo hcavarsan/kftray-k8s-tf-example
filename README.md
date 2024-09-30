@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is an easy way to build a Kubernetes (k8s) cluster. It employs automation by using [Kind (Kubernetes IN Docker)](https://kind.sigs.k8s.io/), `Terraform`, and Helm to set up ArgoCD, Prometheus, Alertmanager, Grafana, and Jaeger. Apart from that, it also sets up kubectl port forwarding via kftray automatically based on services annotations.
+This project is an easy way to build a Kubernetes (k8s) cluster. It employs automation by using [Kind (Kubernetes IN Docker)](https://kind.sigs.k8s.io/), `Terraform`, and Helm to set up `ArgoCD`, `Prometheus`, `Alertmanager`, `Grafana`, and `Jaeger`. Apart from that, it also sets up kubectl port forwarding via [Kftray](https://github.com/hcavarsan/kftray) automatically based on services annotations.
 
 ## Why?
 
@@ -13,9 +13,7 @@ In some cases, there is no need of Ingress controllers or exposed services with 
 Before you begin, make sure you have these installed on your computer:
 
 - [Docker](https://www.docker.com/get-started)
-- [Terraform (v1.0.0 or later)](https://www.terraform.io/downloads.html)
-- [kubectl](https://kubernetes.io/docs/tasks/tools/)
-- [Helm](https://helm.sh/docs/intro/install/)
+- [Terraform (v1.9.5)](https://www.terraform.io/downloads.html)
 - [Kftray](https://github.com/hcavarsan/kftray)
 
 ### 1. Terraform
@@ -57,6 +55,7 @@ With Kftray managing the port forwarding, you can access your services locally a
 
 - **Argo CD:** [http://localhost:16080](http://localhost:16080)
 - **Prometheus:** [http://localhost:19090](http://localhost:19090)
+- **Alertmanager:** [http://localhost:19090](http://localhost:19093)
 - **Grafana:** [http://localhost:13080](http://localhost:13080)
 - **Jaeger:** [http://localhost:15090](http://localhost:15090)
 
