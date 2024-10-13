@@ -7,7 +7,7 @@
 
 ## Overview
 
-This project provides a simple way to build a Kubernetes (k8s) cluster. It automates the bootstrap process for a local k8s cluster and uses [Kind (Kubernetes IN Docker)](https://kind.sigs.k8s.io/), `Terraform`, and Helm to set up `ArgoCD`, `Prometheus`, `Alertmanager`, `Grafana`, and `Jaeger`. Additionally, it automatically configures kubectl port forwarding via [Kftray](https://github.com/hcavarsan/kftray) based on service annotations.
+This project provides a simple way to build a Kubernetes (k8s) cluster. It automates the bootstrap process for a local k8s cluster and uses [Kind (Kubernetes IN Docker)](https://kind.sigs.k8s.io/), `Terraform`, and Helm to set up `ArgoCD`, `Prometheus`, `Alertmanager`, `Grafana`, `Jaeger` and `Meshery. Additionally, it automatically configures kubectl port forwarding via [Kftray](https://github.com/hcavarsan/kftray) based on service annotations.
 
 ## Why?
 
@@ -76,7 +76,7 @@ With Kftray managing the port forwarding, you can access your services locally a
 - **Alertmanager:** [http://localhost:19090](http://localhost:19093)
 - **Grafana:** [http://localhost:13080](http://localhost:13080)
 - **Jaeger:** [http://localhost:15090](http://localhost:15090)
-
+- **Meshery:** [http://localhost:9081](http://localhost:9081)
 
 ## Customizing the Kuberentes cluster and KFTray settings
 

@@ -42,3 +42,9 @@ variable "jaeger_chart_version" {
   type        = string
   default     = "3.3.1"
 }
+
+variable "meshery_chart_version" {
+  description = "The version of the Meshery chart to deploy."
+  type        = string
+  default     = "0.7.38"
+}

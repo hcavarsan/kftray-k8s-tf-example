@@ -45,6 +45,19 @@ locals {
         }
       }
     }
+    meshery = {
+      namespace  = "meshery"
+      repository = "https://meshery.io/charts/"
+      chart      = "meshery"
+      version    = var.meshery_chart_version
+      kftray = {
+        server = {
+          alias       = "meshery"
+          local_port  = "9081"
+          target_port = "8080"
+        }
+      }
+    }
     jaeger = {
       namespace  = "observability"
       repository = "https://jaegertracing.github.io/helm-charts"
